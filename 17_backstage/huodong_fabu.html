@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class=" js csstransforms3d"><head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>发布活动</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/page.css">
+	<!--[if lte IE 8]>
+	<link href="css/ie8.css" rel="stylesheet" type="text/css"/>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/laydate/laydate.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/laydate/need/laydate.css">
+    <link type="text/css" rel="stylesheet" href="js/laydate/skins/default/laydate.css" id="LayDateSkin">
+	<!--[if IE]>
+	<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+
+<body style="background: #f6f5fa;">
+
+	<!--content S-->
+	<div class="super-content">
+		
+		<div class="superCtab">
+			<div class="publishArt">
+				<h4>发布文章</h4>
+				<div class="pubMain">
+					<a href="huodong_guanli.html" class="backlistBtn"><i class="ico-back"></i>返回列表</a>
+					<h5 class="pubtitle">请选择分类</h5>
+					<div class="pub-txt-bar">
+						<select name="" style="height: 39px;">
+							<option value="0">请选择</option>
+							<option value="0">新闻中心</option>
+							<option value="1">投资指南</option>
+							<option value="1">人才中心</option>
+							<option value="1">关于17置业</option>
+						</select>
+						&nbsp;-&nbsp;
+						<select name="" style="height: 39px;">
+							<option value="0">请选择</option>
+							<option value="0">企业动态</option>
+							<option value="1">企业资讯</option>
+							<option value="1">媒体报道</option>
+						</select>
+					</div>
+					<h5 class="pubtitle">文章标题</h5>
+					<div class="pub-txt-bar">
+						<input type="text" class="shuruTxt">
+					</div>
+					<!--<div class="pub-addflbtn"><a href="javascript:;" class="greenbtn add sp-add">添加标签</a></div>-->
+					<!--<h5 class="pubtitle">活动关键字</h5>-->
+					<!--<div class="pub-txt-bar">-->
+						<!--<input type="text" class="shuruTxt">-->
+					<!--</div>-->
+					<h5 class="pubtitle">缩略图</h5>
+					<div class="Thumbnails clearfix">
+						<div class="Thumblist" id="preview">
+							<!--<div class="Thumb_li">-->
+								<!--<div class="bg">-->
+								<!--<a href="javascript:" class="Thumb_delete" title="删除" data-index="0">删除</a>-->
+								<!--</div>-->
+								<!--<img src="images/img-snt.jpg" class="upload_image">								-->
+							<!--</div>-->
+							<!--<div class="Thumb_li">-->
+								<!--<div class="bg" style="display: none;">-->
+								<!--<a href="javascript:" class="Thumb_delete" title="删除" data-index="0">删除</a>-->
+								<!--</div>-->
+								<!--<img src="images/img-snt.jpg" class="upload_image">								-->
+							<!--</div>-->
+						</div>
+						<div class="Thumblistbg upload-img">
+							<input id="fileImage" type="file" size="30" name="fileselect[]" multiple>
+							<a href="javascript:;" class="Thumbbtn"><i class="ico-download"></i>上传图片</a>
+						</div>
+					</div>
+					<!--<div class="hd-start-end">-->
+						<!--<ul class="clearfix">-->
+							<!--<li>-->
+								<!--<h5 class="pubtitle">开始时间</h5>-->
+								<!--<div class="pub-txt-bar">-->
+									<!--<input type="text" class="shuruTxt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})" placeholder="2015-12-01  12:00">-->
+								<!--</div>-->
+							<!--</li>-->
+							<!--<li>-->
+								<!--<h5 class="pubtitle">结束时间</h5>-->
+								<!--<div class="pub-txt-bar">-->
+									<!--<input type="text" class="shuruTxt" onclick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm'})" placeholder="2015-12-20  24:00">-->
+								<!--</div>-->
+							<!--</li>-->
+						<!--</ul>-->
+					<!--</div>-->
+					<!--<h5 class="pubtitle">视频地址</h5>-->
+					<!--<div class="pub-txt-bar">-->
+						<!--<input type="text" class="shuruTxt" placeholder="http://">-->
+					<!--</div>-->
+					<h5 class="pubtitle">文章简介</h5>
+					<div class="pub-area-bar">
+						<textarea name="" rows="" cols="3"></textarea>
+					</div>
+					<h5 class="pubtitle">文章内容</h5>
+					<div class="pub-article-cont"><img src="images/edit.jpg" width="100%"></div>
+					<div class="pub-btn">
+						<input type="button" id="" value="发布" class="saveBtn">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		
+	</div>
+	<!--content E-->
+	<!--点击修改弹出层-->
+	<div class="layuiBg"></div><!--公共遮罩-->
+	<!--点击添加标签弹出-->
+	<div class="addFeileibox addSortBox layuiBox">
+		<div class="layer-title clearfix"><h2>添加标签</h2><span class="layerClose"></span></div>
+		<div class="layer-content">
+			<div class="addSortMain clearfix">
+				<span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span><span>保险</span>
+			</div>
+			<div class="addSortBtn"><input type="button" value="保存" class="saveBtn"></div>
+		</div>
+	</div>
+	
+
+
+<script type="text/javascript" src="js/zxxFile.js"></script>
+<script>
+var params = {
+	fileInput: $("#fileImage").get(0),
+	upButton: $("#fileSubmit").get(0),
+	url: $("#uploadForm").attr("action"),
+	filter: function(files) {
+		var arrFiles = [];
+		for (var i = 0, file; file = files[i]; i++) {
+			if (file.type.indexOf("image") == 0) {
+				if (file.size >= 512000) {
+					alert('您这张"'+ file.name +'"图片大小过大，应小于500k');	
+				} else {
+					arrFiles.push(file);	
+				}			
+			} else {
+				alert('文件"' + file.name + '"不是图片。');	
+			}
+		}
+		return arrFiles;
+	},
+	onSelect: function(files) {
+		var html = '', i = 0;
+		$("#preview").html('<div class="upload_loading"></div>');
+		var funAppendImage = function() {
+			file = files[i];
+			if (file) {
+				var reader = new FileReader()
+				reader.onload = function(e) {
+					html = html +'<div class="Thumb_li"><div class="bg"><a href="javascript:" class="Thumb_delete" title="删除" data-index="'+ i +'">删除</a></div>' +
+						'<img id="uploadImage_' + i + '" src="' + e.target.result + '" class="upload_image" />'+ 
+					'</div>';
+					
+					i++;
+					funAppendImage();
+					$('.Thumb_li').hover(function(){
+				    	$(this).children('.bg').fadeIn();
+				    },function(){
+				    	$(this).children('.bg').fadeOut();
+				    });
+				    $(".Thumb_delete").click(function(){
+				    	$(this).parent().parent('.Thumb_li').remove();
+				    });
+				}
+				reader.readAsDataURL(file);
+			} else {
+				$("#preview").html(html);
+				if (html) {
+					//删除方法
+					$(".Thumb_delete").click(function() {
+						ZXXFILE.funDeleteFile(files[parseInt($(this).attr("data-index"))]);
+						return false;	
+					});
+					//提交按钮显示
+					$("#fileSubmit").show();	
+				} else {
+					//提交按钮隐藏
+					$("#fileSubmit").hide();	
+				}
+			}
+		};
+		funAppendImage();		
+	},
+	onDelete: function(file) {
+		$("#uploadList_" + file.index).fadeOut();
+	},
+	onDragOver: function() {
+		$(this).addClass("upload_drag_hover");
+	},
+	onDragLeave: function() {
+		$(this).removeClass("upload_drag_hover");
+	},
+	onProgress: function(file, loaded, total) {
+		var eleProgress = $("#uploadProgress_" + file.index), percent = (loaded / total * 100).toFixed(2) + '%';
+		eleProgress.show().html(percent);
+	},
+	onSuccess: function(file, response) {
+		$("#uploadInf").append("<p>上传成功，图片地址是：" + response + "</p>");
+	},
+	onFailure: function(file) {
+		$("#uploadInf").append("<p>图片" + file.name + "上传失败！</p>");	
+		$("#uploadImage_" + file.index).css("opacity", 0.2);
+	},
+	onComplete: function() {
+		//提交按钮隐藏
+		$("#fileSubmit").hide();
+		//file控件value置空
+		$("#fileImage").val("");
+		$("#uploadInf").append("<p>当前图片全部上传完毕，可继续添加上传。</p>");
+	}
+};
+ZXXFILE = $.extend(ZXXFILE, params);
+ZXXFILE.init();
+
+</script>
+
+</body></html>
